@@ -378,12 +378,70 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-subscription">
+                <b class="footer-subscription-title">Подпишитесь на рассылку</b>
+                <form class="form-subscription">
+                    <input type="email" placeholder="E-mail" name="subscription-mail">
+                    <button type="submit" class="subscription-btn">
+                        <span>Подписаться</span>
+                        <svg class="footer-subscription-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <form class="form-data">
+                <h2 class="form-data-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <label for="user-name" class="data-label">Имя</label>
+                <div class="data-input-wrapper">
+                    <input type="text" name="user-name" id="user-name"/>
+                    <svg class="data-input-icon" width="12" height="12">
+                        <use href="./images/icons.svg#icon-body"></use>
+                    </svg>
+                </div>
+                <label for="user-tel" class="data-label">Телефон</label>
+                <div class="data-input-wrapper">
+                    <input type="tel" name="user-tel" id="user-tel"/>
+                    <svg class="data-input-icon" width="14" height="14">
+                        <use href="./images/icons.svg#icon-tel"></use>
+                    </svg>
+                </div>
+                <label for="user-email" class="data-label">Почта</label>
+                <div class="data-input-wrapper">
+                    <input type="email" name="user-email" id="user-email"/>
+                    <svg class="data-input-icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+                <label for="user-comment" class="data-label">Коментарий</label>
+                <div class="data-textarea-wrapper">
+                    <textarea name="user-comment" id="user-comment" class="data-textarea" placeholder="Введите текст"></textarea>
+                </div>
+                <div class="data-condition-wrapper">
+                    <label class="data-condition-label">
+                        <span class="data-condition-span">
+                            <input type="checkbox" name="tick"/>
+                            <svg class="data-condition-icon" width="16" height="15">
+                                <use href="./images/icons.svg#icon-tick"></use>
+                            </svg>
+                            <span class="data-condition-border"></span>
+                        </span>
+                        <span class="data-condition-text">Соглашаюсь с рассылкой и принимаю</span> 
+                    </label>
+                    <a href="" class="data-condition"> Условия договора</a>
+                </div>
+                <div class="data-btn-wrapper">
+                    <button type="submit" class="data-btn">
+                        <span class="data-btn-span">Отправить</span>
+                    </button>
+                </div>
+            </form>
             <button class="backdrop-btn" data-modal-close>
-                <svg class="" width="11" height="11">
+                <svg class="backdrop-btn-icon" width="11" height="11">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
